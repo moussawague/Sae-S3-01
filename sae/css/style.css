@@ -169,7 +169,46 @@ a {
     margin: 0 auto;
 }
 
+/* Section 0 */
+.section0{
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/Strasbourg 2.jpg");
+    background-size: cover;      /* L’image couvre toute la zone */
+    background-position: center; /* Centrée */
+    background-repeat: no-repeat; /* Pas de répétition */
+    height: 500px;               /* Hauteur du bloc */
+    width: 100%;
+    color: white;
+}
+
+.section0 .article{
+    margin: 80px;
+    width: 400px;
+}
+
+.section0 h1{
+    font-size: 50px;
+}
+
+.section0 .plus{
+    margin-top: 50px;
+}
+
+.section0 .plus .a{
+    margin-top: 50px;
+}
+
+#don{
+    background-color: #FF0000;
+    color: white;
+}
+
 /* Section 1 */
+.section1{
+    padding-top: 500px;
+}
+
 h3{
     text-align: center;
 }
