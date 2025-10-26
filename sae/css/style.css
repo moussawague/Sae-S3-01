@@ -12,19 +12,26 @@
     margin: 20px 0;
 }
 
+h2{
+    font-size: 40px;
+}
 
+span{
+    background-color: #FF0000;
+    color: white;
+    border-radius: 5px;
+}
 
 /* ---------------- Menu ---------------- */
 body{
-    margin: 150px 55px 0 55px;
+    margin-top: 150px;
     font-family: sans-serif;
     color: #333333;
 }
 .container{
+    align-items: center;
     margin-top: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 a {
@@ -36,6 +43,8 @@ a {
 }
 
 .header{
+    display: flex;
+    height: 110px;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -72,32 +81,43 @@ a {
     outline: 1px solid #FF0000;
 }
 
-.menu2 a {
-    color: white;
-    padding: 10px 10px;
-    border-radius: 10px;
+
+
+.menu2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1px;
+}
+
+.card{
+    margin: 0;
+    font-size: 25px;
     text-align: center;
+    display: flex;              /* active le flexbox */
+    justify-content: center;    /* centre horizontalement */
+    align-items: center;
+}
+.card:hover{
+    filter: brightness(90%);
+    transition: filter 0.3s ease;
 }
 
-.btn1{
+.card:nth-child(1){
+    grid-column: 1 / 3;
     background-color: #FF0000;
-    margin: 5px 0;
+    color: white;
 }
-.btn1:hover{
-    background-color: white;
-    color: #FF0000;
-    outline: 1px solid #FF0000;
+.card:nth-child(2){
+    background-color: #ff8f5ef5;
+    color: white;
+}
+.card:nth-child(3){
+    background-color: #ff8f5ef5;
+    color: white;
 }
 
-.btn{
-    background-color: black;
-    margin: 5px 0;
-}
-.btn:hover{
-    background-color: white;
-    color: black;
-    outline: 1px solid black;
-}
+
 
 .navbar ul{
     margin: 0;
@@ -122,18 +142,18 @@ a {
 }
 
 .dropdown-content{
+    background-color: white;
     visibility: hidden;
     position: absolute;
     left: 50%;
     transform: translateX(calc(-50% - 30px));
     display: flex;
-    background-color: white;
-    top: 100px;
+    top: 83px;
     width: 5000px;
     height: 80px;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid lightgrey;
+    border: 1px solid lightgrey;
 }
 
 .dropdown-content li a{
@@ -150,27 +170,18 @@ a {
     background-color: #FF0000;
     width: 2px;
     height: 100px;
-    margin: auto;
+    margin-left: 25px;
 }
 
-.menu2{
-    margin-right: 15px;
-}
 
-.menu2 a{
-    display: block;
-}
+
 
 /* ---------------- Body ---------------- */
 
-.section1{
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-}
 
-/* Section 0 */
-.section0{
+
+/* banner */
+.banner{
     position: absolute;
     left: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/Strasbourg 2.jpg");
@@ -182,20 +193,20 @@ a {
     color: white;
 }
 
-.section0 .article{
+.banner .article{
     margin: 80px;
     width: 400px;
 }
 
-.section0 h1{
+.banner h1{
     font-size: 50px;
 }
 
-.section0 .plus{
+.banner .plus{
     margin-top: 50px;
 }
 
-.section0 .plus .a{
+.banner .plus .a{
     margin-top: 50px;
 }
 
@@ -204,9 +215,51 @@ a {
     color: white;
 }
 
+/* Section 0 */
+.section0{
+    margin: 55px;
+    padding-top: 500px;
+    h3{
+        font-size: 50px;
+        margin: 10px;
+    }
+    h4{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+#chiffre{
+    margin-top: 40px;
+    background-color: #FF0000;
+    color: white;
+    font-size: 25px;
+}
+
+.section0 div{
+    display: flex;
+    justify-content: center;
+}
+
+.section0 .block{
+    display: block;
+    border-bottom: 18px solid #FF0000;
+    margin: 0 80px;
+    color: black;
+    width: 200px;
+    height: max-content;
+    text-align: center;
+}
+
 /* Section 1 */
 .section1{
-    padding-top: 500px;
+    width: auto;
+    margin: 0 160px;
+    h2{
+        text-align: center;
+        padding-top: 40px;
+    }
 }
 
 h3{
@@ -267,7 +320,7 @@ h3{
 }
 
 .grosBlock img{
-    width: 650px;
+    width: 600px;
     height: auto;
 }
 
@@ -282,10 +335,10 @@ h3{
     align-items: center;
 }
 
-.block h4{
+.section1 .block h4{
     margin: 15px;
 }
-.block h5{
+.section1 .block h5{
     text-decoration: none;
     color: gray;
     margin: 15px;
@@ -317,6 +370,7 @@ table td {
     text-align: center;
     background-color: #FF0000;
     color: white;
+    font-size: 30px;
 }
 table td:hover {
     outline: 1px solid #FF0000;
