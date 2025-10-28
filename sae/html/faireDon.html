@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mon Site</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/styleE.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="accueil.html">
+                <img src="../img/logo.png" alt="Armée du Salut" />
+            </a>
+        </div>
+
+        <!-- Menu de navigation -->
+        <nav class="navbar">
+            <ul class="categorie">
+                <li class="dropdown">
+                    <a>Armée du Salut</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Actions sociales</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Spiritualité</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Actualités</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Nous rejoindre</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Nous soutenir</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a>Nous contacter</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="#">Spiritualité</a></li>
+                        <li><a href="#">Témoignages</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="ligne-verticale"></div>
+    <!-- Bouton "Faire un don" -->
+    <div class="menu2">
+        <a href="faireDon.html" class="card" id="don">Faire un don</a>
+        <a href="#" class="card">Espace donateurs</a>
+        <a href="#" class="card">Espace bénévolat</a>
+    </div>
+</header>
+
+<main>
+    <section class="banner">
+        <div class="article">
+            <h1>Faire un don</h1>
+            <p>Soutenez nos actions et aidez les familles en difficulté</p>
+        </div>
+    </section>
+
+    <section class="section-don">
+        <h2>Votre contribution</h2>
+        <form action="merci.html" method="POST">
+            <label for="amount">Montant du don (€)</label>
+            <input type="number" id="amount" name="amount" value="20" min="1" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="adresse">Adresse (optionnelle)</label>
+            <input type="text" id="adresse" name="adresse">
+
+            <label for="paiement">Mode de paiement</label>
+            <select id="paiement" name="paiement">
+                <option value="carte">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Valider le don</button>
+        </form>
+    </section>
+
+    <section class="section-info">
+        <h2>Pourquoi donner ?</h2>
+        <p>Votre don permet de fournir un colis alimentaire à une famille, soutenir des actions sociales, et offrir un accompagnement aux plus fragiles.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+        <p>Je m'inscris à la Newsletter de la Fondation de l'Armée du Salut</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Votre adresse mail" required>
+            <button type="submit">ok</button>
+        </form>
+    </div>
+
+    <div class="footer-content">
+        <div class="footer-col">
+            <img src="../img/logo.png" alt="Armée du Salut" class="footer-logo">
+            <p>L’Armée du Salut, mouvement international, fait partie de l’ensemble des églises chrétiennes...</p>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="#">Foyers éducatifs et maisons d’enfants</a></li>
+                <li><a href="#">115 et maraudes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="#">Logement d’urgence</a></li>
+                <li><a href="#">Foyers de vie</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Congrégation et Fondation<br>de l'Armée du Salut</h4>
+            <p>60, rue des Frères Flavien<br>75976 Paris Cedex 20</p>
+            <p>📞 <a href="tel:+33143622500">01 43 62 25 00</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© Copyright 2025 Fondation de l'Armée du Salut – Tous droits réservés</p>
+        <div class="footer-links">
+            <a href="#">Plan du site</a>
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

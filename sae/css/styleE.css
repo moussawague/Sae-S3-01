@@ -1,0 +1,345 @@
+/* ---------------- Body ---------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f0f0f5;
+    color: #333;
+}
+
+/* ---------------- Menu ---------------- */
+body{
+    margin-top: 150px;
+    font-family: sans-serif;
+    color: #333333;
+}
+.container{
+    align-items: center;
+    margin-top: 5px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;     /* garde la même couleur que le texte autour (optionnel) */
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.header{
+    display: flex;
+    height: 110px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+    color: black;
+    padding: 15px 0; /* le padding doit être défini dès le départ */
+    border-bottom: 3px solid transparent; /* on réserve la place de la bordure */
+    text-decoration: none;
+    transition: border-color 0.5s ease, color 0.5s ease; /* effet fluide */
+}
+
+.navbar a:hover {
+    color: #FF0000; /* on change juste la couleur de la bordure */
+}
+
+.navbar .dropdown > a:hover {
+    border-bottom-color: #FF0000;
+}
+
+.active{
+    color: #FF0000 !important;
+}
+
+.contact:hover{
+    color: #FF0000 !important;
+    background-color: white;
+    outline: 1px solid #FF0000;
+}
+
+
+
+.menu2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1px;
+}
+
+.card{
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    display: flex;              /* active le flexbox */
+    justify-content: center;    /* centre horizontalement */
+    align-items: center;
+}
+.card:hover{
+    filter: brightness(90%);
+    transition: filter 0.3s ease;
+}
+
+.card:nth-child(1){
+    grid-column: 1 / 3;
+    background-color: #FF0000;
+    color: white;
+}
+.card:nth-child(2){
+    background-color: #ff8f5ef5;
+    color: white;
+}
+.card:nth-child(3){
+    background-color: #ff8f5ef5;
+    color: white;
+}
+
+
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.categorie{
+    display: flex;
+}
+
+.dropdown{
+    margin: 0 15px;
+    width: max-content;
+}
+
+.navbar{
+    margin-left: 80px;
+}
+
+.dropdown-content{
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% - 30px));
+    display: flex;
+    top: 83px;
+    width: 5000px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+
+.dropdown-content li a{
+    margin: 10px;
+}
+
+
+.navbar ul li:hover ul{
+    visibility: visible;
+}
+
+
+.ligne-verticale{
+    background-color: #FF0000;
+    width: 2px;
+    height: 100px;
+    margin-left: 25px;
+}
+
+
+/* Bannière */
+.banner {
+    margin-top: 110px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/Strasbourg 2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.banner h1 {
+    font-size: 40px;
+}
+.banner p {
+    font-size: 18px;
+}
+
+/* Section formulaire */
+.section-don {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+}
+.section-don h2 {
+    color: #FF0000;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-don form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+.section-don label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+.section-don input,
+.section-don select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.section-don button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.section-don button:hover {
+    background: #d12045;
+}
+
+/* Section info / témoignages */
+.section-info {
+    margin: 50px 20px;
+    text-align: center;
+}
+.section-info h2 {
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+.section-info p {
+    font-size: 18px;
+}
+
+/* ---------------- Footer ---------------- */
+
+.footer {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* --- Newsletter (barre rouge) --- */
+.footer-newsletter {
+    background-color: #c80000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-newsletter form {
+    margin-top: 10px;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    width: 250px;
+}
+
+.footer-newsletter button {
+    background-color: #007b9a;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+/* --- Contenu principal --- */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-col h4 {
+    color: #003366;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #007b9a;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-badge {
+    width: 100px;
+    margin: 10px 5px;
+}
+
+/* --- Bandeau du bas --- */
+.footer-bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+}
