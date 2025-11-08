@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Accueil - Mon Site</title>
-    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="icon" type="image/png" href="../img/logo.png" />
     <link rel="stylesheet" href="../css/styleE.css" />
 </head>
 <body>
@@ -13,64 +13,54 @@
     <div class="container">
         <!-- Logo -->
         <div class="logo">
-            <a href="accueil.html">
-                <img src="../img/logo.png" alt="Armée du Salut" />
-            </a>
+            <a href="accueil.html"><img src="../img/logo.png" alt="Armée du Salut" /></a>
         </div>
-
         <!-- Menu de navigation -->
         <nav class="navbar">
             <ul class="categorie">
-                <li class="dropdown">
-                    <a>Armée du Salut</a>
+                <li class="dropdown"><a>Armée du Salut</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Actions sociales</a>
+                <li class="dropdown"><a>Actions sociales</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Spiritualité</a>
+                <li class="dropdown"><a>Spiritualité</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Actualités</a>
+                <li class="dropdown"><a>Actualités</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Nous rejoindre</a>
+                <li class="dropdown"><a>Nous rejoindre</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Nous soutenir</a>
+                <li class="dropdown"><a>Nous soutenir</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Nous contacter</a>
+                <li class="dropdown"><a>Nous contacter</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
@@ -91,91 +81,228 @@
 
 <main>
     <section class="banner">
-        <div class="article">
-            <h1>Faire un don</h1>
-            <p>Soutenez nos actions et aidez les familles en difficulté</p>
+        <img src="../img/Strasbourg 2.jpg" alt="Armée du Salut" class="banner-img">
+        <div class="banner-content">
+          <h1>Armée du salut</h1>
+          <p>
+            Pour un monde plus solidaire et inclusif : l'équipe de l'armée du salut soutient les familles modestes,
+            accompagne les enfants défavorisés, favorise l'accès au sport et à la culture pour les personnes en situation
+            de handicap, et mène chaque jour des actions adaptées aux besoins de chacun.
+          </p>
+          <a href="#don-form" class="btn">NOUS SOUTENIR</a>
         </div>
-    </section>
+      </section>
+
+      <section class="about-army-salvation">
+  <div id="propos" class="content">
+    <h2>À Propos de l’Armée du Salut</h2>
+
+    <div class="text">
+      <h3>Qui sommes-nous ?</h3>
+      <p><strong>L’Armée du Salut est un mouvement religieux et social international</strong> qui œuvre pour la réhabilitation des personnes en difficulté et la solidarité envers tous les exclus de la société. Nous menons des actions sociales, éducatives, spirituelles et d’urgence partout en France et dans le monde.</p>
+
+      <h3>Notre mission</h3>
+      <p><strong>Être là pour les plus vulnérables</strong>, offrir soutien, accueil et accompagnement, tout en promouvant la dignité et l’espoir. L’Armée du Salut s’engage auprès des sans-abri, des familles en précarité, des personnes isolées et handicapées, avec des actions locales adaptées aux besoins.</p>
+
+      <h3>Pour qui ?</h3>
+      <p><strong>Pour toutes celles et ceux qui ont besoin d’une main tendue.</strong> Que ce soit des enfants, des jeunes en difficulté, des familles modestes ou des personnes isolées, nous proposons un réseau d’aide et d’écoute, avec respect et tolérance.</p>
+    </div>
+
+    <div class="image">
+      <img src="../img/dessin.png" alt="Dessin solidaire Armée du Salut : maison, bus, enfants" />
+    </div>
+  </div>
+</section>
+      
 
     <section class="section-don">
         <h2>Votre contribution</h2>
-        <form action="merci.html" method="POST">
+        <div class="don-container">
+      
+          <!-- Formulaire don -->
+          <form id="don-form" action="#" method="POST" class="don-form">
             <label for="amount">Montant du don (€)</label>
-            <input type="number" id="amount" name="amount" value="20" min="1" required>
-
+            <input type="number" id="amount" name="amount" value="20" min="1" required />
+      
             <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" name="prenom" required>
-
+            <input type="text" id="prenom" name="prenom" required />
+      
             <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required>
-
+            <input type="text" id="nom" name="nom" required />
+      
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" required />
+      
             <label for="adresse">Adresse (optionnelle)</label>
-            <input type="text" id="adresse" name="adresse">
-
+            <input type="text" id="adresse" name="adresse" />
+      
             <label for="paiement">Mode de paiement</label>
             <select id="paiement" name="paiement">
-                <option value="carte">Carte bancaire</option>
-                <option value="paypal">PayPal</option>
+              <option value="carte">Carte bancaire</option>
+              <option value="paypal">PayPal</option>
             </select>
-
-            <button type="submit">Valider le don</button>
-        </form>
-    </section>
+      
+            <!-- On remplace le bouton classique par un bouton qui déclenche le script JS -->
+            <button id="faire-don-btn" type="submit">Valider le don</button>
+          </form>
+      
+          <!-- Bloc cagnotte -->
+          <aside class="cagnotte">
+            <div class="label-don">Don</div>
+            <p>
+              Vos dons financent directement nos maraudes, nos événements, nos activités pour les personnes en situation de handicap ainsi que nos futurs projets au Maroc.
+              Le lien HelloAsso est en cours de création.
+            </p>
+      
+            <div class="objectif-container">
+              <label class="objectif-label">Objectif</label>
+              <progress id="cagnotte-bar" value="0" max="100"></progress>
+              <div id="cagnotte-text" class="bientot-dispo">0 / 1000 €</div>
+            </div>
+      
+            <div>
+              <a href="#propos" class="lien-mission">En savoir plus sur notre mission →</a>
+            </div>
+          </aside>
+      
+        </div>
+      </section>
 
     <section class="section-info">
         <h2>Pourquoi donner ?</h2>
         <p>Votre don permet de fournir un colis alimentaire à une famille, soutenir des actions sociales, et offrir un accompagnement aux plus fragiles.</p>
     </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <button id="modal-close-btn">OK</button>
+        </div>
+      </div>
 </main>
 
 <footer class="footer">
-    <!-- Newsletter -->
-    <div class="footer-newsletter">
-        <p>Je m'inscris à la Newsletter de la Fondation de l'Armée du Salut</p>
-        <form action="#" method="post">
-            <input type="email" placeholder="Votre adresse mail" required>
-            <button type="submit">ok</button>
-        </form>
-    </div>
 
-    <div class="footer-content">
-        <div class="footer-col">
-            <img src="../img/logo.png" alt="Armée du Salut" class="footer-logo">
-            <p>L’Armée du Salut, mouvement international, fait partie de l’ensemble des églises chrétiennes...</p>
-        </div>
-        <div class="footer-col">
-            <ul>
-                <li><a href="#">Foyers éducatifs et maisons d’enfants</a></li>
-                <li><a href="#">115 et maraudes</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <ul>
-                <li><a href="#">Logement d’urgence</a></li>
-                <li><a href="#">Foyers de vie</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Congrégation et Fondation<br>de l'Armée du Salut</h4>
-            <p>60, rue des Frères Flavien<br>75976 Paris Cedex 20</p>
-            <p>📞 <a href="tel:+33143622500">01 43 62 25 00</a></p>
-        </div>
-    </div>
+    <section class="footer-newsletter">
+      <h3>Inscrivez-vous à notre newsletter</h3>
+      <p>Recevez toutes les actualités et actions de la Fondation de l'Armée du Salut.</p>
+      <form action="#" method="post" class="newsletter-form">
+        <input type="email" placeholder="Votre adresse mail" required aria-label="Adresse mail"/>
+        <button type="submit">S'inscrire</button>
+      </form>
+    </section>
+  
+    <section class="footer-main">
+      <div class="footer-col logo-col">
+        <img src="../img/logo.png" alt="Armée du Salut" class="footer-logo" />
+        <p class="footer-description">
+          L’Armée du Salut, mouvement international, fait partie de l’ensemble des églises chrétiennes...
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Nos Actions</h4>
+        <ul>
+          <li><a href="#">Foyers éducatifs et maisons d’enfants</a></li>
+          <li><a href="#">115 et maraudes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Solidarité</h4>
+        <ul>
+          <li><a href="#">Logement d’urgence</a></li>
+          <li><a href="#">Foyers de vie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact-col">
+        <h4>Contact</h4>
+        <address>
+          60, rue des Frères Flavien<br>75976 Paris Cedex 20<br>
+          📞 <a href="tel:+33143622500">01 43 62 25 00</a>
+        </address>
+      </div>
+    </section>
+  
+    <section class="footer-bottom">
+      <p>© 2025 Fondation de l'Armée du Salut – Tous droits réservés</p>
+      <nav class="footer-links">
+        <a href="#">Plan du site</a>
+        <a href="#">Mentions légales</a>
+      </nav>
+      <div class="social-icons" role="navigation" aria-label="Liens vers réseaux sociaux">
+        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </section>
+  
+  </footer>
 
-    <div class="footer-bottom">
-        <p>© Copyright 2025 Fondation de l'Armée du Salut – Tous droits réservés</p>
-        <div class="footer-links">
-            <a href="#">Plan du site</a>
-            <a href="#">Mentions légales</a>
-        </div>
-        <div class="social-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-    </div>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+(function(){
+  const objectif = 100;
+  let cagnotteActuelle = 0; // valeur initiale visible à l’image
+
+  const progressBar = document.getElementById('cagnotte-bar');
+  const progressText = document.getElementById('cagnotte-text');
+  const form = document.getElementById('don-form');
+  const modal = document.getElementById('modal');
+  const modalMessage = document.getElementById('modal-message');
+  const btnClose = document.getElementById('modal-close-btn');
+
+  function showModal(message) {
+    modalMessage.textContent = message;
+    modal.style.display = 'flex';
+  }
+  btnClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  function lancerConfetti() {
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+
+  function majCagnotte() {
+    const val = Math.min(cagnotteActuelle, objectif);
+    progressBar.value = val;
+    progressText.textContent = `${val} / ${objectif} €`;
+    if(val >= objectif) lancerConfetti();
+  }
+
+  majCagnotte();
+
+  // Gestionnaire unique sur la soumission du formulaire
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    // Ici le formulaire est valide, on peut mettre à jour la cagnotte
+    const montantInput = form.querySelector('#amount');
+    const montant = parseFloat(montantInput.value);
+
+    if(isNaN(montant) || montant <= 0) {
+      showModal('Veuillez saisir un montant valide.');
+      return;
+    }
+
+    cagnotteActuelle += montant;
+    if(cagnotteActuelle > objectif) cagnotteActuelle = objectif;
+
+    majCagnotte();
+    
+    showModal(`Merci pour votre don de ${montant} € !`);
+
+    // Réinitialiser formulaire si vous le souhaitez
+    // form.reset();
+  });
+})();
+</script>
 </body>
 </html>
