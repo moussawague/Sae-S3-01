@@ -3,155 +3,161 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil - Mon Site</title>
+    <title>Actions sociales - Armée du Salut</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleI.css" />
+
+    <!-- Google Fonts + AOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
+    <!-- Header -->
     <div class="container">
-        <!-- Logo -->
         <div class="logo">
             <a href="accueil.html">
                 <img src="../img/logo.png" alt="Armée du Salut" />
             </a>
         </div>
-
-        <!-- Menu de navigation -->
         <nav class="navbar">
             <ul class="categorie">
                 <li class="dropdown">
                     <a>Armée du Salut</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="actions_sociales.html">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a>Actions sociales</a>
+                    <a href="actions_sociales.html">Actions sociales</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
+                        <li><a href="actions_sociales.html">Actions sociales</a></li>
                         <li><a href="#">Spiritualité</a></li>
                         <li><a href="#">Témoignages</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a>Spiritualité</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Actualités</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Nous rejoindre</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Nous soutenir</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a>Nous contacter</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
+                <li class="dropdown"><a>Spiritualité</a></li>
+                <li class="dropdown"><a>Actualités</a></li>
+                <li class="dropdown"><a>Nous rejoindre</a></li>
+                <li class="dropdown"><a>Nous soutenir</a></li>
+                <li class="dropdown"><a>Nous contacter</a></li>
             </ul>
         </nav>
     </div>
     <div class="ligne-verticale"></div>
-    <!-- Bouton "Faire un don" -->
     <div class="menu2">
-        <a href="faireDon.html" class="card" id="don">Faire un don</a>
+        <a href="faireDon.html" class="card">Faire un don</a>
         <a href="#" class="card">Espace donateurs</a>
         <a href="#" class="card">Espace bénévolat</a>
     </div>
 </header>
 
-<!-- SECTION HÉRO -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Nos actions sociales</h1>
-        <p>Chaque jour, l’Armée du Salut agit pour soutenir les plus fragiles :
-            accueil, hébergement, insertion, accompagnement social.</p>
-        <a href="#domaines" class="btn">Découvrir nos missions</a>
-    </div>
-</section>
-
-<!-- DOMAINES D’ACTION -->
-<section id="domaines" class="domaines">
-    <h2>Des actions au cœur de la solidarité</h2>
-    <div class="cards">
-        <article class="card">
-            <img src="images/jeunesse.jpg" alt="Aide à la jeunesse">
-            <h3>Jeunesse</h3>
-            <p>Accompagnement éducatif, insertion sociale et soutien aux jeunes en difficulté.</p>
-            <a href="#" class="btn-secondary">En savoir plus</a>
-        </article>
-
-        <article class="card">
-            <img src="images/exclusion.jpg" alt="Lutte contre l’exclusion">
-            <h3>Exclusion sociale</h3>
-            <p>Hébergement d’urgence, repas solidaires, aide à la réinsertion.</p>
-            <a href="#" class="btn-secondary">En savoir plus</a>
-        </article>
-
-        <article class="card">
-            <img src="images/handicap.jpg" alt="Accompagnement du handicap">
-            <h3>Handicap</h3>
-            <p>Accueil, écoute et accompagnement des personnes en situation de handicap.</p>
-            <a href="#" class="btn-secondary">En savoir plus</a>
-        </article>
-    </div>
-</section>
-
-<!-- CHIFFRES CLÉS -->
-<section class="chiffres">
-    <h2>Nos chiffres clés</h2>
-    <div class="stats">
-        <div class="stat">
-            <h3>350+</h3>
-            <p>Établissements en France</p>
+<main>
+    <!-- HERO -->
+    <section class="hero-actions">
+        <img src="../img/solidarite.jpg" alt="Solidarité Armée du Salut" class="hero-img">
+        <div class="hero-overlay text-center">
+            <h1 data-aos="fade-down">Nos actions sociales</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Chaque jour, l’Armée du Salut agit pour soutenir les plus fragiles :
+                accueil, hébergement, insertion, accompagnement social.
+            </p>
+            <a href="#domaines" class="btn-rouge" data-aos="zoom-in" data-aos-delay="400">Découvrir nos missions</a>
         </div>
-        <div class="stat">
-            <h3>5 000+</h3>
-            <p>Salariés et bénévoles</p>
+    </section>
+
+    <!-- DOMAINES D’ACTION -->
+    <section id="domaines" class="domaines">
+        <div class="container-domaines">
+            <div class="intro text-center" data-aos="fade-up">
+                <h2 class="titre-section">Des actions au cœur de la solidarité</h2>
+                <div class="barre"></div>
+                <p>Découvrez les domaines dans lesquels l’Armée du Salut s’engage chaque jour.</p>
+            </div>
+
+            <div class="cards-domaines">
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="100">
+                    <img src="../img/jeunesse.jpg" alt="Aide à la jeunesse">
+                    <div class="text">
+                        <h3>Jeunesse</h3>
+                        <p>Accompagnement éducatif, insertion sociale et soutien aux jeunes en difficulté.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="200">
+                    <img src="../img/exclusion.jpg" alt="Lutte contre l’exclusion">
+                    <div class="text">
+                        <h3>Exclusion sociale</h3>
+                        <p>Hébergement d’urgence, repas solidaires et aide à la réinsertion.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="300">
+                    <img src="../img/handicap.jpg" alt="Accompagnement du handicap">
+                    <div class="text">
+                        <h3>Handicap</h3>
+                        <p>Accueil, écoute et accompagnement des personnes en situation de handicap.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="stat">
-            <h3>20 000+</h3>
-            <p>Personnes accompagnées chaque année</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <!-- Footer inchangé -->
+    <div class="footer-newsletter">
+        <p>Je m'inscris à la Newsletter de la Fondation de l'Armée du Salut</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Votre adresse mail" required>
+            <button type="submit">ok</button>
+        </form>
+    </div>
+    <div class="footer-content">
+        <div class="footer-col">
+            <img src="../img/logo.png" alt="Armée du Salut" class="footer-logo">
+            <p>L’Armée du Salut, mouvement international, fait partie de l’ensemble des églises chrétiennes...</p>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="#">Foyers éducatifs et maisons d’enfants</a></li>
+                <li><a href="#">115 et maraudes</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="#">Logement d’urgence</a></li>
+                <li><a href="#">Foyers de vie</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Congrégation et Fondation<br>de l'Armée du Salut</h4>
+            <p>60, rue des Frères Flavien<br>75976 Paris Cedex 20</p>
+            <p>📞 <a href="tel:+33143622500">01 43 62 25 00</a></p>
         </div>
     </div>
-</section>
-
-<!-- COMMENT AGIR -->
-<section class="agir">
-    <h2>Vous pouvez, vous aussi, faire la différence</h2>
-    <div class="actions">
-        <a href="#" class="btn">Devenir bénévole</a>
-        <a href="#" class="btn">Faire un don</a>
-        <a href="#" class="btn">Partager autour de moi</a>
+    <div class="footer-bottom">
+        <p>© Copyright 2025 Fondation de l'Armée du Salut – Tous droits réservés</p>
+        <div class="footer-links">
+            <a href="#">Plan du site</a>
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
     </div>
-</section>
+</footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>
