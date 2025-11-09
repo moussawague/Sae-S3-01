@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.nav-link.active {
+    color: #FF0000 !important;
+    border-bottom: 3px solid #FF0000 !important;
+    font-weight: 600;
+}
+
 body {
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
     background-color: #f0f0f5;
@@ -1812,7 +1818,7 @@ progress::-moz-progress-bar {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1350px) {
     body {
         margin-top: 220px;
     }
