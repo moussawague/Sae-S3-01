@@ -1818,6 +1818,17 @@ progress::-moz-progress-bar {
     }
 }
 
+.btn-info{
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .btn:hover{
+    background-color: #FF0000;
+    color: white;
+    border: solid 1px #FF0000;
+}
+
 @media screen and (max-width: 1350px) {
     body {
         margin-top: 220px;
