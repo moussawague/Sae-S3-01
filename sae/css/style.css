@@ -963,6 +963,93 @@ h2 {
     color: #fff;
 }
 
+.actualites {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.container-actualites {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.actualites .titre-section {
+    color: #004080;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.barre.bleue {
+    width: 60px;
+    height: 4px;
+    background-color: #004080;
+    border-radius: 3px;
+    margin: 0 auto 20px;
+}
+
+.cards-actualites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.card-actualite {
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card-actualite:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-actualite img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-actualite:hover img {
+    transform: scale(1.1);
+}
+
+.card-actualite .text {
+    padding: 25px;
+}
+
+.card-actualite h3 {
+    color: #004080;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card-actualite p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.btn-lien-bleu {
+    display: inline-block;
+    border: 2px solid #004080;
+    color: #004080;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-lien-bleu:hover {
+    background-color: #004080;
+    color: #fff;
+}
+
 /* ========== PAGE JEUNESSE ========== */
 .hero-jeunes {
     position: relative;
@@ -1087,6 +1174,120 @@ h2 {
     }
 }
 
+/* ========== PAGE ACTUALITÉ ========== */
+.hero-actualite {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-actualite .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(105%);
+    transition: transform 8s ease;
+}
+
+.hero-actualite:hover .hero-img {
+    transform: scale(1.05);
+}
+
+.hero-actualite .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,50,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-actualite h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-actualite p {
+    font-size: 1.1rem;
+    max-width: 700px;
+}
+
+/* --- Contenu principal de la page actualité --- */
+.contenu-actualite {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container-actualite {
+    max-width: 950px;
+    margin: auto;
+}
+
+.container-actualite h2 {
+    color: #004080;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.container-actualite p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* --- Témoignage/Bloc bleu avec image --- */
+.temoignage.bleu {
+    background-color: #f4f8ff;
+    padding: 80px 20px;
+}
+
+.temoignage.bleu .texte-cas h3 {
+    color: #004080;
+}
+
+.temoignage.bleu .texte-cas p {
+    color: #333;
+}
+
+/* --- Retour --- */
+.retour .btn-lien-bleu {
+    padding: 12px 30px;
+    margin-top: 60px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+    .cards-actualites {
+        grid-template-columns: 1fr;
+    }
+    .hero-actualite h1 {
+        font-size: 2rem;
+    }
+    .hero-actualite p {
+        font-size: 1rem;
+    }
+    .container-actualite h2 {
+        font-size: 1.6rem;
+    }
+    .temoignage.bleu .container-temoignage {
+        flex-direction: column;
+        text-align: center;
+    }
+    .temoignage.bleu img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
 
 /* ========== PAGE FAIRE UN DON ========== */
 .about-army-salvation {
