@@ -1050,6 +1050,69 @@ h2 {
     color: #fff;
 }
 
+.chiffres-cles {
+    background-color: #fff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.container-chiffres {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.chiffres-cles .titre-section {
+    color: #a40000;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.chiffres-cles .barre {
+    width: 60px;
+    height: 4px;
+    background-color: #a40000;
+    border-radius: 3px;
+    margin: 0 auto 25px;
+}
+
+.chiffres-cles .intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #a40000;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.stat p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .stat h3 {
+        font-size: 2rem;
+    }
+}
+
+
 /* ========== PAGE JEUNESSE ========== */
 .hero-jeunes {
     position: relative;
