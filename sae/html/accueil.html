@@ -124,26 +124,26 @@
     </section>
 
     <section class="section3">
-        <h1>Nos action</h1>
+        <h1>Nos actions</h1>
         <div class="grid">
             <div class="carte">
-                <img src="../img/accompagner.jpg" alt="">
+                <img src="../img/accompagner.jpg" alt="Personnes accompagnées">
                 <div class="description">Personnes accompagnées</div>
                 <div class="cacher">Chaque jour, nos équipes se mobilisent auprès de personnes en situation de vulnérabilité pour leur apporter soutien, écoute et solutions concrètes.</div>
             </div>
             <div class="carte">
-                <img src="../img/champs-daction.jpg" alt="">
+                <img src="../img/champs-daction.jpg" alt="Champs d'action">
                 <div class="description">Champs d'action</div>
-                <div class="cacher">Chaque jour, les équipes de l’Armée du Salut agissent concrètement pour répondre aux défis sociaux et humanitaires.</div>
+                <div class="cacher">Chaque jour, les équipes de l'Armée du Salut agissent concrètement pour répondre aux défis sociaux et humanitaires.</div>
             </div>
             <div class="carte">
-                <img src="../img/evenement.jpg" alt="">
-                <div class="description">Événement</div>
-                <div class="cacher">L'armée du salut organise de nombreux événements dans le but de récolter tout ce nous les personnes prise en charge pourront avoir besoin.</div>
+                <img src="../img/evenement.jpg" alt="Événements">
+                <div class="description">Événements</div>
+                <div class="cacher">L'Armée du Salut organise de nombreux événements dans le but de récolter tout ce dont les personnes prises en charge pourront avoir besoin.</div>
             </div>
             <div class="carte">
-                <img src="../img/etablissement.jpg" alt="">
-                <div class="description">Etablissements et postes</div>
+                <img src="../img/etablissement.jpg" alt="Établissements et postes">
+                <div class="description">Établissements et postes</div>
                 <div class="cacher">L'Armée du Salut compte plus de 200 établissements implantés dans 28 départements et 12 régions, ainsi que 23 postes (paroisses).</div>
             </div>
         </div>
@@ -315,7 +315,7 @@
 
             <div class="newsletter-form">
                 <input type="email" placeholder="Votre email" class="email-input">
-                <button class="subscribe-btn">S'inscrire →</button>
+                <button class="footer-btn">S'inscrire →</button>
             </div>
             <div class="newsletter-checkbox">
                 <label>
@@ -358,7 +358,7 @@
             <div class="footer-column">
                 <h4>DONNER</h4>
                 <h4>M'ENGAGER</h4>
-                <a href="#" class="contact-btn">Contactez-nous →</a>
+                <button href="#" class="footer-btn">Contactez-nous →</button>
 
                 <div class="label-ideas">
                     <h5>LABEL IDEAS</h5>
@@ -418,5 +418,21 @@
         window.onclick = (e) => { if(e.target === popup) popup.style.display = 'none'; }
     };
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const section2 = document.querySelector('.section2');
+        if (section2) observer.observe(section2);
+    });
+</script>
+
 </body>
 </html>
