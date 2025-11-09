@@ -209,6 +209,63 @@ h2 {
     transform: scale(1.05);
 }
 
+.bannerDon {
+    margin-top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/Strasbourg 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bannerDon .banner-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.bannerDon h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bannerDon p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.bannerDon .btn {
+    display: inline-block;
+    background-color: #FF0000;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 2px solid #FF0000;
+}
+
+.bannerDon .btn:hover {
+    background-color: transparent;
+    color: #FF0000;
+    border-color: #FF0000;
+    transform: translateY(-2px);
+}
+
 /* ========== SECTIONS ========== */
 /* Section 1 - Actualités */
 .section1 {
@@ -962,6 +1019,12 @@ h2 {
 
 .section-don {
     margin: 50px 20px;
+    h2{
+        font-size: 40px;
+        color: #FF0000;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .don-container {
