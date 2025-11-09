@@ -15,6 +15,7 @@
 <body>
 
 <header>
+
     <nav class="navbar navbar-expand-xxl navbar-light bg-white">
         <div class="container-fluid">
             <a href="accueil.html">
@@ -29,6 +30,9 @@
                         <a class="nav-link" href="accueil.html">Armée du salut</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="actualite.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="actions_sociales.html">Nos Actions</a>
                     </li>
                     <li class="nav-item">
@@ -37,7 +41,7 @@
                 </ul>
                 <div class="btn-container">
                     <a class="nav-link" href="#"><img src="../img/compte.svg" alt="compte"> Espace donateur</a>
-                    <a class="btn custom-btn2">Faire un don</a>
+                    <a class="btn custom-btn2" href="faireDon.html">Faire un don</a>
                 </div>
             </div>
         </div>
@@ -295,6 +299,23 @@
         </div>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Récupère le chemin actuel
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Trouve tous les liens de navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Ajoute la classe active au lien correspondant
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

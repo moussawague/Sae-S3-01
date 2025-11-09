@@ -26,6 +26,9 @@
                         <a class="nav-link" href="accueil.html">Armée du salut</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="actualite.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="actions_sociales.html">Nos Actions</a>
                     </li>
                     <li class="nav-item">
@@ -34,7 +37,7 @@
                 </ul>
                 <div class="btn-container">
                     <a class="nav-link" href="#"><img src="../img/compte.svg" alt="compte"> Espace donateur</a>
-                    <a class="btn custom-btn2">Faire un don</a>
+                    <a class="btn custom-btn2" href="faireDon.html">Faire un don</a>
                 </div>
             </div>
         </div>
@@ -55,14 +58,14 @@
     <section class="section1">
         <h1>Actualités et dossiers</h1>
         <div class="groupe">
-            <div class="article">
-                <img src="../img/aide-alimentaires-fin-solutions-uniques.jpg" alt="image1">
+            <a class="article" onclick="window.location.href='centre_daccueil.html'">
+                <img src="../img/actu5.jpg" alt="image1">
                 <div id="description">
                     <button type="button" class="btn btn-primary" disabled>Actualité</button>
-                    <h4>Moi demain : toutes les valeurs de la Fondation en un seul projet</h4>
-                    <p>Démarré à la rentrée 2024 pour promouvoir la parole et le parcours de vie de résidentes et résidents de la Résidence Catherine Booth...</p>
+                    <h4>Ouverture d’un centre d’accueil à Lille</h4>
+                    <p>Une nouvelle structure pour accueillir les familles en difficulté.</p>
                 </div>
-            </div>
+            </a>
             <div class="block">
                 <img src="../img/actu2.jpg" alt="image2">
                 <div class="description1">
@@ -88,6 +91,7 @@
                 </div>
             </div>
         </div>
+        <div class="btn-info"><a class="btn" href="actualite.html">Voir plus</a></div>
     </section>
 
     <section class="section2">
@@ -393,6 +397,24 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Récupère le chemin actuel
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Trouve tous les liens de navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Ajoute la classe active au lien correspondant
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
 <script>
     window.onload = () => {
         const popup = document.getElementById('donPopup');
