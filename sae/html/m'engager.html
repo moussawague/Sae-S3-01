@@ -5,84 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M'engager - Armée du Salut</title>
     <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/styleR.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="logo">
+<header>
+
+    <nav class="navbar navbar-expand-xxl navbar-light bg-white">
+        <div class="container-fluid">
             <a href="accueil.html">
                 <img src="../img/logo.png" alt="Armée du Salut" />
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Armée du salut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nos Actions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">M'engager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nous soutenir</a>
+                    </li>
+                </ul>
+                <div class="btn-container">
+                    <a class="nav-link" href="#"><img src="../img/compte.svg" alt="compte"> Espace donateur</a>
+                    <a class="btn custom-btn2">Faire un don</a>
+                </div>
+            </div>
         </div>
-
-        <nav class="navbar">
-            <ul class="categorie">
-                <li class="dropdown">
-                    <a href="#">Armée du Salut</a>
-                    <ul class="dropdown-content">
-                        <li><a href="actions_sociales.html">Actions sociales</a></li>
-                        <li><a href="#">Spiritualité</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="actions_sociales.html">Actions sociales</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Hébergement d'urgence</a></li>
-                        <li><a href="#">Aide alimentaire</a></li>
-                        <li><a href="#">Accompagnement social</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Spiritualité</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Notre foi</a></li>
-                        <li><a href="#">Cultes et prières</a></li>
-                        <li><a href="#">Ressources spirituelles</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#">Actualités</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Dernières nouvelles</a></li>
-                        <li><a href="#">Événements</a></li>
-                        <li><a href="#">Publications</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="m_engager.html" style="color: #FF0000;">Nous rejoindre</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Bénévolat</a></li>
-                        <li><a href="#">Emploi</a></li>
-                        <li><a href="#">Stage</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="faireDon.html">Nous soutenir</a>
-                    <ul class="dropdown-content">
-                        <li><a href="faireDon.html">Faire un don</a></li>
-                        <li><a href="#">Legs et donations</a></li>
-                        <li><a href="#">Partenariats</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="contact.html">Nous contacter</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Formulaire de contact</a></li>
-                        <li><a href="#">Trouver un établissement</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="ligne-verticale"></div>
-    <div class="menu2">
-        <a href="faireDon.html" class="card-menu">Faire un don</a>
-        <a href="#" class="card-menu">Espace donateurs</a>
-        <a href="#" class="card-menu">Espace bénévolat</a>
-    </div>
+    </nav>
 </header>
 
 <main class="main-container">
@@ -183,52 +143,80 @@
 </main>
 
 <footer class="footer">
-    <div class="footer-newsletter">
-        <p>Je m'inscris à la Newsletter de la Fondation de l'Armée du Salut</p>
-        <form action="#" method="post">
-            <input type="email" placeholder="Votre adresse mail" required>
-            <button type="submit">OK</button>
-        </form>
-    </div>
+    <div class="footer-container">
+        <!-- Section Newsletter -->
+        <div class="footer-section newsletter-section">
+            <h3>Suivez nos actions au quotidien</h3>
+            <p class="newsletter-title">Recevez la newsletter de l'Armée du Salut</p>
+            <div class="separator"></div>
 
-    <div class="footer-content">
-        <div class="footer-col">
-            <img src="../img/logo.png" alt="Armée du Salut" class="footer-logo">
-            <p>L'Armée du Salut, mouvement international, fait partie de l'ensemble des églises chrétiennes...</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Votre email" class="email-input">
+                <button class="footer-btn">S'inscrire →</button>
+            </div>
+            <div class="newsletter-checkbox">
+                <label>
+                    <input type="checkbox">
+                    Je m'inscris à la Newsletter de la Fondation
+                </label>
+            </div>
         </div>
-        <div class="footer-col">
-            <h4>Nos Actions</h4>
-            <ul>
-                <li><a href="#">Foyers éducatifs</a></li>
-                <li><a href="#">Maisons d'enfants</a></li>
-                <li><a href="#">115 et maraudes</a></li>
-                <li><a href="#">Aide alimentaire</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>S'engager</h4>
-            <ul>
-                <li><a href="#">Logement d'urgence</a></li>
-                <li><a href="#">Foyers de vie</a></li>
-                <li><a href="#">Bénévolat</a></li>
-                <li><a href="#">Faire un don</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Congrégation et Fondation<br>de l'Armée du Salut</h4>
-            <p>60, rue des Frères Flavien<br>75976 Paris Cedex 20</p>
-            <p>📞 <a href="tel:+33143622500">01 43 62 25 00</a></p>
-        </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>© Copyright 2025 Fondation de l'Armée du Salut – Tous droits réservés</p>
-        <div class="footer-links">
-            <a href="#">Plan du site</a>
-            <a href="#">Mentions légales</a>
+        <!-- Section Informations -->
+        <div class="footer-section info-section">
+            <div class="footer-column">
+                <h4>ARMÉE DU SALUT</h4>
+                <p>60, rue des Frères Flavien<br>
+                    75976 Paris cedex 20<br>
+                    France<br>
+                    01 43 62 25 00</p>
+
+                <div class="social-icons">
+                    <span>SUIVEZ-NOUS</span>
+                    <div class="icons">
+                        <a href="#" class="social-icon">☐</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>VERSIONS ACCOMPLIES</h4>
+                <ul>
+                    <li><a href="#">Personnes accompagnées</a></li>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">Champs d'action</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Établissements et postes</a></li>
+                    <li><a href="#">La Nuit de la Philanthropie</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>DONNER</h4>
+                <h4>M'ENGAGER</h4>
+                <button href="#" class="footer-btn">Contactez-nous →</button>
+
+                <div class="label-ideas">
+                    <h5>LABEL IDEAS</h5>
+                    <p>Le Label IDEAS atteste de la mise en œuvre par la Fondation de l'Armée du Salut de bonnes pratiques en matière de gouvernance, de gestion financière et d'évaluation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Mentions légales -->
+        <div class="footer-bottom">
+            <div class="legal-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Gestion des cookies</a>
+                <a href="#">Crédits supermegas</a>
+            </div>
         </div>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     const observerOptions = {
