@@ -195,6 +195,10 @@ nav ul {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: none; /* retire le léger flou induit par le zoom */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/solidarite.jpg");
+    background-size: cover;      /* L’image couvre toute la zone */
+    background-position: center; /* Centrée */
+    background-repeat: no-repeat; /* Pas de répétition */
 }
 
 .hero-actions:hover .hero-img {
@@ -243,6 +247,45 @@ nav ul {
 .btn-rouge:hover {
     background-color: #800000;
     transform: scale(1.05);
+}
+
+/* SECTION PRÉSENTATION */
+.presentation {
+    background-color: #fff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.container-presentation {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.presentation h2 {
+    font-size: 2rem;
+    color: #a40000;
+    margin-bottom: 15px;
+}
+
+.presentation .barre {
+    width: 60px;
+    height: 4px;
+    background-color: #a40000;
+    border-radius: 3px;
+    margin: 0 auto 30px;
+}
+
+.presentation p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Ajuste la grille domaines pour 6 cartes */
+.cards-domaines {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 /* DOMAINES */
