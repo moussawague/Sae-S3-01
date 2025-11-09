@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeunesse - Armée du Salut</title>
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Google Fonts + AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+  <nav class="navbar navbar-expand-xxl navbar-light bg-white">
+    <div class="container-fluid">
+      <a href="accueil.html">
+        <img src="../img/logo.png" alt="Armée du Salut" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="accueil.html">Armée du salut</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="actions_sociales.html">Nos Actions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="m'engager.html">M'engager</a>
+          </li>
+        </ul>
+        <div class="btn-container">
+          <a class="nav-link" href="#"><img src="../img/compte.svg" alt="compte"> Espace donateur</a>
+          <a class="btn custom-btn2">Faire un don</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO PAGE JEUNESSE -->
+  <section class="hero-jeunes">
+    <img src="../img/jeunesse.jpg" alt="Jeunes Armée du Salut" class="hero-img">
+    <div class="hero-overlay text-center">
+      <h1 data-aos="fade-down">Agir pour la jeunesse</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Soutenir, accompagner et redonner confiance aux jeunes en difficulté.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRÉSENTATION DE L’ACTION -->
+  <section class="contenu-jeunes">
+    <div class="container-contenu">
+      <h2 data-aos="fade-right">Un accompagnement global pour les jeunes</h2>
+      <div class="barre"></div>
+      <p data-aos="fade-up" data-aos-delay="150">
+        L’Armée du Salut œuvre chaque jour pour offrir aux jeunes en situation de précarité une véritable
+        seconde chance. À travers ses foyers éducatifs, ses centres d’insertion et ses missions locales,
+        elle accompagne les jeunes vers l’autonomie et la réinsertion sociale et professionnelle.
+      </p>
+
+      <p data-aos="fade-up" data-aos-delay="300">
+        L’objectif n’est pas seulement de répondre à un besoin matériel immédiat, mais d’aider chaque jeune
+        à reconstruire un projet de vie durable. Cet accompagnement passe par la formation, le soutien psychologique,
+        l’apprentissage des savoir-être, et la mise en confiance.
+      </p>
+    </div>
+  </section>
+
+  <!-- CAS CONCRET -->
+  <section class="temoignage" data-aos="fade-up">
+    <div class="container-temoignage">
+      <div class="image-cas">
+        <img src="../img/cas_jeune.jpg" alt="Témoignage jeune">
+      </div>
+      <div class="texte-cas">
+        <h3>“L’Armée du Salut m’a aidé à retrouver confiance”</h3>
+        <p>
+          <em>Maxime, 19 ans</em>, a connu une période de grande instabilité après avoir quitté le système scolaire.
+          Accueilli dans un foyer de l’Armée du Salut, il a bénéficié d’un accompagnement éducatif et de formations pratiques.
+          Aujourd’hui, il suit un apprentissage en menuiserie et encadre à son tour d’autres jeunes en difficulté.
+        </p>
+        <p>
+          Ce parcours montre combien le soutien global – logement, accompagnement social, activités éducatives – peut redonner
+          espoir et perspectives à une génération en quête de repères.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CHIFFRES -->
+  <section class="chiffres-jeunes">
+    <div class="container-chiffres">
+      <div class="chiffre" data-aos="zoom-in" data-aos-delay="100">
+        <h3>+1200</h3>
+        <p>jeunes accompagnés chaque année</p>
+      </div>
+      <div class="chiffre" data-aos="zoom-in" data-aos-delay="200">
+        <h3>35</h3>
+        <p>établissements dédiés à la jeunesse</p>
+      </div>
+      <div class="chiffre" data-aos="zoom-in" data-aos-delay="300">
+        <h3>85%</h3>
+        <p>des jeunes retrouvent une solution durable</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETOUR -->
+  <div class="retour text-center" data-aos="fade-up">
+    <a href="actions_sociales.html" class="btn-rouge">← Retour aux actions sociales</a>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Section Newsletter -->
+    <div class="footer-section newsletter-section">
+      <h3>Suivez nos actions au quotidien</h3>
+      <p class="newsletter-title">Recevez la newsletter de l'Armée du Salut</p>
+      <div class="separator"></div>
+
+      <div class="newsletter-form">
+        <input type="email" placeholder="Votre email" class="email-input">
+        <button class="footer-btn">S'inscrire →</button>
+      </div>
+      <div class="newsletter-checkbox">
+        <label>
+          <input type="checkbox">
+          Je m'inscris à la Newsletter de la Fondation
+        </label>
+      </div>
+    </div>
+
+    <!-- Section Informations -->
+    <div class="footer-section info-section">
+      <div class="footer-column">
+        <h4>ARMÉE DU SALUT</h4>
+        <p>60, rue des Frères Flavien<br>
+          75976 Paris cedex 20<br>
+          France<br>
+          01 43 62 25 00</p>
+
+        <div class="social-icons">
+          <span>SUIVEZ-NOUS</span>
+          <div class="icons">
+            <a href="#" class="social-icon">☐</a>
+            <a href="#" class="social-icon">in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>VERSIONS ACCOMPLIES</h4>
+        <ul>
+          <li><a href="#">Personnes accompagnées</a></li>
+          <li><a href="#">Événements</a></li>
+          <li><a href="#">Champs d'action</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Établissements et postes</a></li>
+          <li><a href="#">La Nuit de la Philanthropie</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>DONNER</h4>
+        <h4>M'ENGAGER</h4>
+        <button href="#" class="footer-btn">Contactez-nous →</button>
+
+        <div class="label-ideas">
+          <h5>LABEL IDEAS</h5>
+          <p>Le Label IDEAS atteste de la mise en œuvre par la Fondation de l'Armée du Salut de bonnes pratiques en matière de gouvernance, de gestion financière et d'évaluation.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Mentions légales -->
+    <div class="footer-bottom">
+      <div class="legal-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Gestion des cookies</a>
+        <a href="#">Crédits supermegas</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>
