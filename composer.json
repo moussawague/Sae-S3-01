@@ -1,0 +1,11 @@
+{
+  "name": "sae/project",
+  "autoload": {
+    "psr-4": {
+      "sae\\": "sae/app/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}

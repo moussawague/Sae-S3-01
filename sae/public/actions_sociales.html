@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>actualités</title>
-    <link rel="icon" type="image/png" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Actions sociales - Armée du Salut</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Google Fonts + AOS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
 
     <nav class="navbar navbar-expand-xxl navbar-light bg-white">
         <div class="container-fluid">
-            <a href="accueil.html">
-                <img src="../img/logo.png" alt="Armée du Salut" />
+            <a href="accueil.php">
+                <img src="img/logo.png" alt="Armée du Salut" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="accueil.html">Armée du salut</a>
+                        <a class="nav-link" href="accueil.php">Armée du salut</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="actualite.html">Actualités</a>
@@ -40,7 +40,7 @@
                     </li>
                 </ul>
                 <div class="btn-container">
-                    <a class="nav-link" href="#"><img src="../img/compte.svg" alt="compte"> Espace donateur</a>
+                    <a class="nav-link" href="#"><img src="img/compte.svg" alt="compte"> Espace donateur</a>
                     <a class="btn custom-btn2" href="faireDon.html">Faire un don</a>
                 </div>
             </div>
@@ -51,54 +51,103 @@
 <main>
     <!-- HERO -->
     <section class="hero-actions">
-        <img src="../img/solidarite.jpg" alt="Solidarité Armée du Salut" class="hero-img">
+        <img src="img/solidarite.jpg" alt="Solidarité Armée du Salut" class="hero-img">
         <div class="hero-overlay text-center">
-            <h1 data-aos="fade-down">Nos actualités</h1>
+            <h1 data-aos="fade-down">Nos actions sociales</h1>
             <p data-aos="fade-up" data-aos-delay="200">
-                Découvrez nos actualités et ressources et apprenez en davantage au sujets nos actions et prises de paroles.
+                Chaque jour, l’Armée du Salut agit pour soutenir les plus fragiles :
+                accueil, hébergement, insertion, accompagnement social.
             </p>
-            <a href="#actualites" class="btn-rouge" data-aos="zoom-in" data-aos-delay="400">Découvrir nos actus</a>
+            <a href="#presentation" class="btn-rouge" data-aos="zoom-in" data-aos-delay="400">Découvrir nos missions</a>
         </div>
     </section>
 
+    <!-- SECTION PRÉSENTATION -->
+    <section id="presentation" class="presentation">
+        <div class="container-presentation">
+            <h2 data-aos="fade-down">Agir au plus près des personnes en difficulté</h2>
+            <div class="barre"></div>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Depuis plus d’un siècle, l’Armée du Salut s’engage auprès de celles et ceux
+                qui font face à la précarité, à l’exclusion ou à la solitude. À travers ses
+                établissements sociaux, ses centres d’hébergement, ses foyers, ses structures
+                d’insertion et ses maraudes, elle agit pour redonner dignité et espoir.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+                Chaque action vise à accompagner les personnes vers une plus grande autonomie,
+                sans distinction d’origine, de croyance ou de parcours. L’objectif : offrir à
+                chacun les moyens de se reconstruire et de retrouver sa place dans la société.
+            </p>
+        </div>
+    </section>
 
-    <!-- SECTION ACTUALITÉS -->
-    <section id="actualites" class="actualites">
-        <div class="container-actualites">
+    <!-- DOMAINES D’ACTION -->
+    <section id="domaines" class="domaines">
+        <div class="container-domaines">
             <div class="intro text-center" data-aos="fade-up">
-                <h2 class="titre-section">Actualités sociales</h2>
-                <div class="barre bleue"></div>
-                <p>Suivez les dernières initiatives et projets solidaires menés par l’Armée du Salut.</p>
+                <h2 class="titre-section">Des actions au cœur de la solidarité</h2>
+                <div class="barre"></div>
+                <p>Découvrez les domaines dans lesquels l’Armée du Salut s’engage chaque jour.</p>
             </div>
 
-            <div class="cards-actualites">
+            <div class="cards-domaines">
                 <!-- 1 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="100">
-                    <img src="../img/actu5.jpg" alt="Nouvelle structure d'accueil">
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/jeunesse.jpg" alt="Aide à la jeunesse">
                     <div class="text">
-                        <h3>Ouverture d’un nouveau centre d’accueil à Lille</h3>
-                        <p>Un espace moderne et chaleureux dédié aux familles en difficulté, inauguré en septembre 2025.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
+                        <h3>Jeunesse</h3>
+                        <p>Accompagnement éducatif, insertion sociale et soutien aux jeunes en difficulté.</p>
+                        <a href="jeunesse.html" class="btn-lien">En savoir plus</a>
                     </div>
                 </div>
 
                 <!-- 2 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="200">
-                    <img src="../img/actu6.avif" alt="Collecte de vêtements">
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/exclusion.jpg" alt="Lutte contre l’exclusion">
                     <div class="text">
-                        <h3>Grande collecte de vêtements d’hiver</h3>
-                        <p>Des centaines de bénévoles mobilisés pour venir en aide aux plus démunis à l’approche de l’hiver.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
+                        <h3>Exclusion sociale</h3>
+                        <p>Hébergement d’urgence, repas solidaires et aide à la réinsertion.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
                     </div>
                 </div>
 
                 <!-- 3 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="300">
-                    <img src="../img/actu7.jpg" alt="Atelier insertion">
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/handicap.jpg" alt="Accompagnement du handicap">
                     <div class="text">
-                        <h3>Atelier d’insertion professionnelle à Lyon</h3>
-                        <p>Un programme de formation et d’accompagnement pour les jeunes sans emploi.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
+                        <h3>Handicap</h3>
+                        <p>Accueil, écoute et accompagnement des personnes en situation de handicap.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/personnes_agees.jpg" alt="Aide aux personnes âgées">
+                    <div class="text">
+                        <h3>Personnes âgées</h3>
+                        <p>Accueil en maisons de retraite, accompagnement quotidien et lutte contre l’isolement.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="500">
+                    <img src="img/insertion.jpg" alt="Insertion professionnelle">
+                    <div class="text">
+                        <h3>Insertion professionnelle</h3>
+                        <p>Formations, chantiers d’insertion et accompagnement vers l’emploi durable.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="card-domaine" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/urgence.jpg" alt="Urgence et catastrophes">
+                    <div class="text">
+                        <h3>Urgence et catastrophes</h3>
+                        <p>Interventions rapides lors de crises humanitaires ou de catastrophes naturelles.</p>
+                        <a href="#" class="btn-lien">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -182,8 +231,6 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Récupère le chemin actuel
@@ -201,6 +248,7 @@
     });
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, once: true });
 </script>
