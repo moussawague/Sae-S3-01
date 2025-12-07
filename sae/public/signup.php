@@ -48,4 +48,4 @@ else {
     $type = "danger";
 }
 
-Messages::goHome($message, $type, "espace_donateur.html");
+Messages::goHome($message, $type, "espace_donateur.php");

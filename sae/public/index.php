@@ -1,3 +1,9 @@
+<?php
+
+if(!session_id())
+    session_start();
+$_SESSION['part']=false;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -14,7 +20,7 @@
 
     <nav class="navbar navbar-expand-xxl navbar-light bg-white">
         <div class="container-fluid">
-            <a href="accueil.html">
+            <a href="index.php">
                 <img src="img/logo.png" alt="Armée du Salut" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="accueil.html">Armée du salut</a>
+                        <a class="nav-link" href="index.php">Armée du salut</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="actualite.html">Actualités</a>
@@ -36,13 +42,14 @@
                     </li>
                 </ul>
                 <div class="btn-container">
-                    <a class="nav-link" href="espace_donateur.html"><img src="img/compte.svg" alt="compte"> Espace donateur</a>
+                    <a class="nav-link" href="espace_donateur.php"><img src="img/compte.svg" alt="compte"> Espace donateur</a>
                     <a class="btn custom-btn2" href="faireDon.html">Faire un don</a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
+
 
 <main>
     <section class="banner">

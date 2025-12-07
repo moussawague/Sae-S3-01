@@ -14,19 +14,19 @@ class MariaDBBenevoleRepository implements IBenevoleRepository {
      */
     public function saveBenevole(Benevole $benevole) : bool {
         $sql = "INSERT INTO benevole 
-            (nom, prenom, dateNaissance, mail, password, dateArrivee) 
+            (nom, prenom, date_naissance, mail, password, date_arrivee) 
             VALUES 
-            (:nom, :prenom, :dateNaissance, :mail, :password, :dateArrivee)";
+            (:nom, :prenom, :date_naissance, :mail, :password, :date_arrivee)";
 
         $stmt = $this->dbConnexion->prepare($sql);
 
         return $stmt->execute([
             ':nom'           => $benevole->getNom(),
             ':prenom'        => $benevole->getPrenom(),
-            ':dateNaissance' => $benevole->getDateNaissance()->format('Y-m-d'),
+            ':date_naissance' => $benevole->getDateNaissance()->format('Y-m-d'),
             ':mail'          => $benevole->getMail(),
             ':password'      => $benevole->getPassword(),
-            ':dateArrivee'   => $benevole->getDateArrivee()->format('Y-m-d')
+            ':date_arrivee'   => $benevole->getDateArrivee()->format('Y-m-d')
         ]);
     }
 
@@ -51,13 +51,31 @@ class MariaDBBenevoleRepository implements IBenevoleRepository {
         }
 
         return new Benevole(
+            $data['id_benevole'],
             $data['nom'],
             $data['prenom'],
-            new \DateTime($data['dateNaissance']),  // <- CORRECTION
+            new \DateTime($data['date_naissance']),  // <- CORRECTION
             $data['mail'],
             $data['password'],
             isset($data['dateArrivee']) ? new \DateTime($data['dateArrivee']) : null
         );
+    }
+
+    public function estParticipant(Benevole $benevole): bool
+    {
+        $sql = "SELECT COUNT(*) FROM est_participant WHERE id_benevole = :id";
+
+        $stmt = $this->dbConnexion->prepare($sql);
+        $stmt->execute([':id' => $benevole->getId()]);
+
+        return $stmt->fetchColumn() > 0;
+    }
+
+    public function getAll(): array {
+        $sql = "SELECT * FROM benevole";
+        $stmt = $this->dbConnexion->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
 

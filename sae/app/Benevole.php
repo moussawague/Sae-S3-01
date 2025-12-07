@@ -5,16 +5,18 @@ namespace sae;
 use DateTime;
 class Benevole
 {
+    private int $id;
     private string $nom;
     private string $prenom;
     private string $password;
     private DateTime $dateNaissance;
     private string $mail;
 
-    public function __construct(string $nom, string $prenom, DateTime $dateNaissance,
+    public function __construct(int $id, string $nom, string $prenom, DateTime $dateNaissance,
                                 string $mail, String $password
     )
     {
+        $this->id = $id;
         $this->nom = $nom;
         $this->prenom = $prenom;
         $this->dateNaissance = $dateNaissance;
@@ -49,5 +51,9 @@ class Benevole
 
     public function getDateArrivee(): DateTime{
         return $this->dateCreation;
+    }
+
+    public function getId(): int{
+        return $this->id;
     }
 }

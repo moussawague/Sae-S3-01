@@ -1,24 +1,35 @@
+<?php
+if (!session_id()) session_start();
+
+require_once '../../vendor/autoload.php';
+
+use sae\Messages;
+
+
+
+if (!($_SESSION['part']===true)) {
+    Messages::goHome("Bienvenue bénévole !", "success", "index.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>actualités</title>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
     <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Google Fonts + AOS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header>
 
     <nav class="navbar navbar-expand-xxl navbar-light bg-white">
         <div class="container-fluid">
-            <a href="index.php">
+            <a href="accueil.html">
                 <img src="img/logo.png" alt="Armée du Salut" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Armée du salut</a>
+                        <a class="nav-link" href="accueil.html">Armée du salut</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="actualite.html">Actualités</a>
@@ -40,73 +51,26 @@
                     </li>
                 </ul>
                 <div class="btn-container">
-                    <a class="nav-link" href="#"><img src="img/compte.svg" alt="compte"> Espace donateur</a>
+                    <a class="nav-link" href="espace_donateur.php"><img src="img/compte.svg" alt="compte"> Espace donateur</a>
                     <a class="btn custom-btn2" href="faireDon.html">Faire un don</a>
                 </div>
             </div>
         </div>
     </nav>
 </header>
-
-<main>
-    <!-- HERO -->
-    <section class="hero-actions">
-        <img src="img/solidarite.jpg" alt="Solidarité Armée du Salut" class="hero-img">
-        <div class="hero-overlay text-center">
-            <h1 data-aos="fade-down">Nos actualités</h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-                Découvrez nos actualités et ressources et apprenez en davantage au sujets nos actions et prises de paroles.
-            </p>
-            <a href="#actualites" class="btn-rouge" data-aos="zoom-in" data-aos-delay="400">Découvrir nos actus</a>
-        </div>
-    </section>
-
-
-    <!-- SECTION ACTUALITÉS -->
-    <section id="actualites" class="actualites">
-        <div class="container-actualites">
-            <div class="intro text-center" data-aos="fade-up">
-                <h2 class="titre-section">Actualités sociales</h2>
-                <div class="barre bleue"></div>
-                <p>Suivez les dernières initiatives et projets solidaires menés par l’Armée du Salut.</p>
-            </div>
-
-            <div class="cards-actualites">
-                <!-- 1 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/actu5.jpg" alt="Nouvelle structure d'accueil">
-                    <div class="text">
-                        <h3>Ouverture d’un nouveau centre d’accueil à Lille</h3>
-                        <p>Un espace moderne et chaleureux dédié aux familles en difficulté, inauguré en septembre 2025.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/actu6.avif" alt="Collecte de vêtements">
-                    <div class="text">
-                        <h3>Grande collecte de vêtements d’hiver</h3>
-                        <p>Des centaines de bénévoles mobilisés pour venir en aide aux plus démunis à l’approche de l’hiver.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class="card-actualite" data-aos="fade-up" data-aos-delay="300">
-                    <img src="img/actu7.jpg" alt="Atelier insertion">
-                    <div class="text">
-                        <h3>Atelier d’insertion professionnelle à Lyon</h3>
-                        <p>Un programme de formation et d’accompagnement pour les jeunes sans emploi.</p>
-                        <a href="centre_daccueil.html" class="btn-lien-bleu">Lire l’article</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+<?php
+// 🔥 AFFICHAGE DU MESSAGE FLASH
+Messages::messageFlash();
+?>
+<h1>participant</h1>
+<h1>participant</h1>
+<h1>participant</h1>
+<h1>participant</h1>
+<button type="button" class="btn btn-primary btn-lg">
+    <a href="data.php">Données bénévoles</a>
+</button>
+</body>
 
 <footer class="footer">
     <div class="footer-container">
@@ -182,27 +146,48 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+    window.onload = () => {
+        const popup = document.getElementById('donPopup');
+        const closeBtn = document.getElementById('closeBtn');
+        const donBtn = document.getElementById('donBtn');
+
+        // Affiche le popup automatiquement
+        popup.style.display = 'flex';
+
+        // Fermer le popup
+        closeBtn.onclick = () => popup.style.display = 'none';
+
+        // Redirection sur la page de don
+        donBtn.onclick = () => {
+            const amount = document.getElementById('amount').value;
+            // On peut ajouter le montant dans l'URL si besoin
+            window.location.href = `faireDon.html?amount=${amount}`;
+        }
+
+        // Clic en dehors de la modale pour fermer
+        window.onclick = (e) => { if(e.target === popup) popup.style.display = 'none'; }
+    };
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Récupère le chemin actuel
-        const currentPage = window.location.pathname.split('/').pop();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
 
-        // Trouve tous les liens de navigation
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        // Ajoute la classe active au lien correspondant
-        navLinks.forEach(link => {
-            if (link.getAttribute('href') === currentPage) {
-                link.classList.add('active');
-            }
-        });
+        const section2 = document.querySelector('.section2');
+        if (section2) observer.observe(section2);
     });
 </script>
 
-<script>
-    AOS.init({ duration: 1000, once: true });
-</script>
 </body>
 </html>

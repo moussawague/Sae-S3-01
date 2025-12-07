@@ -28,12 +28,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $pwd   = $_POST['signin-pwd'] ?? '';
 
     try {
-        // Si OK, authenticate() ne lance pas d’exception
-        $auth->authenticate($email, $pwd);
-        Messages::goHome("Connexion réussie !", "success", "connecte.php");
+        $user = $auth->authenticate($email, $pwd);
+
+
+        // Après authentification réussie, vérifier participant
+        if ($trousseau->estParticipant($user)) {
+            $_SESSION['part']=true;
+            Messages::goHome("Bienvenue participant !", "success", "espace_participant.php");
+        } else {
+            Messages::goHome("Bienvenue bénévole !", "success", "connecte.php");
+        }
 
     } catch (AuthentificationException $e) {
-        // Si mauvais mot de passe / email manquant / email introuvable
-        Messages::goHome($e->getMessage(), "danger", "connecte.php");
+        Messages::goHome($e->getMessage(), "danger", "espace_donateur.php");
     }
+
 }

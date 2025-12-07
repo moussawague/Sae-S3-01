@@ -5,4 +5,5 @@ namespace sae;
 interface IBenevoleRepository {
     public function saveBenevole(Benevole $benevole): bool;
     public function findUserByEmail(string $email): ?Benevole;
+    public function estParticipant(Benevole $benevole): bool;
 }

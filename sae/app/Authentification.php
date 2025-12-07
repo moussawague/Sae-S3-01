@@ -38,7 +38,7 @@ class Authentification {
         $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
         // ❗ ENREGISTRER LE HASH ET NON LE MOT DE PASSE EN CLAIR
-        $benevole = new Benevole($prenom, $nom, $date, $email, $hashedPwd);
+        $benevole = new Benevole(8 ,$prenom, $nom, $date, $email, $hashedPwd);
 
         return $this->benevoleRepository->saveBenevole($benevole);
     }
@@ -47,7 +47,7 @@ class Authentification {
     /**
      * @throws AuthentificationException
      */
-    public function authenticate(string $email, string $password) : string
+    public function authenticate(string $email, string $password) : benevole
     {
         // TODO : À compléter
         if (empty($email) || empty($password)) {
@@ -67,8 +67,13 @@ class Authentification {
         }
 
         // Retourne un message ou token si nécessaire
-        return "OK";
+        return $user;
     }
+
+    public function participant(Benevole $benevole) : bool {
+        return $this->benevoleRepository->estParticipant($benevole);
+    }
+
 
 
 }

@@ -58,4 +58,22 @@ HTML;
             unset($_SESSION['flash']);
         }
     }
+
+    public static function goBack(string $message, string $type = "success") : void
+    {
+        if (!session_id()) {
+            session_start();
+        }
+
+        // Stockage dans le même format que goHome()
+        $_SESSION['flash'][$type] = $message;
+
+        if (!empty($_SERVER['HTTP_REFERER'])) {
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+        } else {
+            header("Location: index.php");
+        }
+
+        exit;
+    }
 }
