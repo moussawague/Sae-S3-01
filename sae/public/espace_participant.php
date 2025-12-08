@@ -70,6 +70,9 @@ Messages::messageFlash();
 <button type="button" class="btn btn-primary btn-lg">
     <a href="data.php">Données bénévoles</a>
 </button>
+<button type="button" class="btn btn-primary btn-lg">
+    <a href="missions.php">missions</a>
+</button>
 </body>
 
 <footer class="footer">

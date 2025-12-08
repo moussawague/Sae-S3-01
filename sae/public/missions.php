@@ -27,9 +27,9 @@ try {
 // Récupération des bénévoles
 //
 $repo = new MariaDBBenevoleRepository($pdo);
-$benevoles = $repo->getAll("benevole");
-$_SESSION['id_update'] ="id_benevole";
-$_SESSION['table'] ="benevole" ?>
+$missions = $repo->getAll("mission");
+$_SESSION['id_update'] ="id_mission";
+$_SESSION['table'] ="mission" ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -37,8 +37,8 @@ $_SESSION['table'] ="benevole" ?>
     <title>Accueil</title>
     <link rel="icon" type="image/png" href="img/logo.png">
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet">
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -85,9 +85,9 @@ $_SESSION['table'] ="benevole" ?>
 
     <table class="table table-striped table-bordered">
         <thead class="table-dark">
-        <?php if (!empty($benevoles)): ?>
+        <?php if (!empty($missions)): ?>
             <tr>
-                <?php foreach (array_keys($benevoles[0]) as $col): ?>
+                <?php foreach (array_keys($missions[0]) as $col): ?>
                     <th><?= htmlspecialchars($col) ?></th>
                 <?php endforeach; ?>
                 <th>Actions</th>
@@ -96,7 +96,7 @@ $_SESSION['table'] ="benevole" ?>
         </thead>
 
         <tbody>
-        <?php foreach ($benevoles as $b): ?>
+        <?php foreach ($missions as $b): ?>
             <tr>
 
                 <?php foreach ($b as $key => $val): ?>
@@ -108,9 +108,9 @@ $_SESSION['table'] ="benevole" ?>
                     <button class="btn btn-primary btn-sm"
                             data-bs-toggle="modal"
                             data-bs-target="#editModal"
-                            <?php foreach ($b as $col => $val): ?>
-                                data-<?= strtolower($col) ?>="<?= htmlspecialchars($val) ?>"
-                            <?php endforeach; ?>
+                        <?php foreach ($b as $col => $val): ?>
+                            data-<?= strtolower($col) ?>="<?= htmlspecialchars($val) ?>"
+                        <?php endforeach; ?>
                     >
                         Modifier
                     </button>
@@ -138,9 +138,9 @@ $_SESSION['table'] ="benevole" ?>
             <form action="update.php" method="POST">
                 <div class="modal-body">
 
-                    <?php foreach ($benevoles[0] as $col => $val): ?>
+                    <?php foreach ($missions[0] as $col => $val): ?>
 
-                        <?php if ($col === 'id_benevole'): ?>
+                        <?php if ($col === 'id_mission'): ?>
                             <!-- ID caché -->
                             <input type="hidden" name="<?= $col ?>" id="edit-<?= $col ?>">
                         <?php else: ?>

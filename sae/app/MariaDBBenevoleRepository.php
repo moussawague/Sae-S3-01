@@ -71,8 +71,8 @@ class MariaDBBenevoleRepository implements IBenevoleRepository {
         return $stmt->fetchColumn() > 0;
     }
 
-    public function getAll(): array {
-        $sql = "SELECT * FROM benevole";
+    public function getAll(string $table): array {
+        $sql = "SELECT * FROM $table";
         $stmt = $this->dbConnexion->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
