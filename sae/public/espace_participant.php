@@ -8,7 +8,7 @@ use sae\Messages;
 
 
 if (!($_SESSION['part']===true)) {
-    Messages::goHome("Bienvenue bénévole !", "success", "index.php");
+    Messages::goBack("vous n'avez pas accès à cette page", "danger");
     exit;
 }
 
@@ -67,12 +67,8 @@ Messages::messageFlash();
 <h1>participant</h1>
 <h1>participant</h1>
 <h1>participant</h1>
-<button type="button" class="btn btn-primary btn-lg">
-    <a href="data.php">Données bénévoles</a>
-</button>
-<button type="button" class="btn btn-primary btn-lg">
-    <a href="missions.php">missions</a>
-</button>
+<a href="data.php" class="btn btn-primary btn-lg">Données bénévoles</a>
+<a href="missions.php" class="btn btn-primary btn-lg">Missions</a>
 </body>
 
 <footer class="footer">

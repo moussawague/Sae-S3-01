@@ -2,6 +2,10 @@
 
 if(!session_id())
     session_start();
+
+require_once '../../vendor/autoload.php';
+use sae\Messages;
+
 $_SESSION['part']=false;
 ?>
 <!DOCTYPE html>
@@ -49,7 +53,10 @@ $_SESSION['part']=false;
         </div>
     </nav>
 </header>
-
+<?php
+// 🔥 AFFICHAGE DU MESSAGE FLASH
+Messages::messageFlash();
+?>
 
 <main>
     <section class="banner">
