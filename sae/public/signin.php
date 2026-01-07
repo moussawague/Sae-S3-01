@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Après authentification réussie, vérifier participant
         if ($trousseau->estParticipant($user)) {
             $_SESSION['part']=true;
-            Messages::goHome("Bienvenue participant !", "success", "espace_participant.php");
+            Messages::goHome("Bienvenue participant !", "success", "back-office/espace_participant.php");
         } else {
             Messages::goHome("Bienvenue bénévole !", "success", "connecte.php");
         }
